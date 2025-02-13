@@ -9,8 +9,8 @@ const config = {
   ],
   theme: {
     extend: {
-      colors: {
-        
+      backgroundImage: {
+        'home-img': 'url(/bcg.jpg)',  
       },
     },
   },
