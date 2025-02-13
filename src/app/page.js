@@ -8,9 +8,9 @@ export default function Home() {
             <div className={'absolute inset-0 top-0 left-0 w-full h-full bg-black/65'}></div>
             <div className={'flex flex-col w-full h-full'}>
             <h1 className='text-center text-white text-3xl font-bold lg:text-6xl px-12 pt-16 mb-10 z-50'>
-                Welcome to Developers Blog
+                 Developer Blog
             </h1>
-            <p className='z-50 text-white md:text-2xl max-w-2xl mx-auto px-12'>
+            <p className='z-50 text-white text-lg md:text-2xl max-w-2xl mx-auto px-12'>
                 Unlock a world of insightful articles and hands-on tutorials in web development, software engineering, and programming languages.
 
 
