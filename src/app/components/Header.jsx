@@ -41,9 +41,8 @@ const Header = () => {
           </div>
            <div>
             <Button
-          className='w-12 h-10 hidden sm:inline'
+          className='w-12 h-12 hidden sm:inline'
           color='gray'
-          pill
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         >
           {theme === 'light' ? <FaSun /> : <FaMoon />}

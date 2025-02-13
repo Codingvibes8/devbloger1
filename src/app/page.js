@@ -3,41 +3,35 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div>
-      <div className='flex flex-col min-h-[60vh] w-full px-3 bg-cover bg-center' style={{'home-img': "url('/bcg.jpg')" }}>
-        <h1 className='text-center text-3xl font-bold lg:text-6xl px-12 pt-16 mb-10'>
-          Welcome to Developers Blog
-        </h1>
-        <p className='text-gray-200 md:text-2xl max-w-2xl mx-auto px-12'>
-          Discover a variety of articles and tutorials on topics such as web
-          development, software engineering, and programming languages, all
-          brought to you through a blog built with Next.js and{' '}
-          <a
-            href='https://go.clerk.com/fgJHKlt'
-            className='text-teal-500 hover:underline'
-            target='_blank'
-          >
-            Clerk
-          </a>
-          .
-        </p>
-        <Link
-          href='/'
-          className='text-lg flex justify-center text-white font-bold hover:underline mt-10'
-        >
-          View all posts
-        </Link>
-      </div>
-      <div className='p-3 bg-amber-100 dark:bg-slate-700 mt-8'>
-        CallToAction
-      </div>
-      <div className='p-3 flex flex-col gap-8 py-7'>
-        <Link
-          href='/'
-          className='text-lg text-gray-800 hover:underline text-center'
-        >
-          View all posts
-        </Link>
-      </div>
+        <div className='relative flex flex-col min-h-[60vh] w-full px-3 bg-cover bg-center'
+             style={{backgroundImage: "url('/bcg3.jpg')"}}>
+            <div className={'absolute inset-0 top-0 left-0 w-full h-full bg-black/65'}></div>
+            <div className={'flex flex-col w-full h-full'}>
+            <h1 className='text-center text-white text-3xl font-bold lg:text-6xl px-12 pt-16 mb-10 z-50'>
+                Welcome to Developers Blog
+            </h1>
+            <p className='z-50 text-white md:text-2xl max-w-2xl mx-auto px-12'>
+                Unlock a world of insightful articles and hands-on tutorials in web development, software engineering, and programming languages.
+
+
+            </p>
+<div className='z-50 text-xl flex items-center justify-center rounded-2xl  text-white bg-blue-800 font-bold  mt-10 max-w-[200px]'>
+    <Link href='/'>
+        View all posts
+    </Link>
+</div>
+
+            <div className='z-50text-white p-3 bg-amber-900 dark:bg-slate-700 mt-8'>
+                CallToAction
+            </div>
+
+        </div>
+
+
     </div>
-  );
+
+
+</div>
+)
+
 }
