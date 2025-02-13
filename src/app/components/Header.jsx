@@ -9,7 +9,7 @@ import { useTheme } from 'next-themes'
 import { dark, light } from '@clerk/themes'
 import { SignIn, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { Button } from '@/app/components/ui/button'
-import { Switch } from '@/app/components/ui/switch'
+import { Switch } from '../components/ui/switch'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -43,7 +43,7 @@ const Header = () => {
               <SignedOut>
                 <Link href="/sign-in">
                   <Button className="bg-yellow-700 py-2 px-6">
-                    Sign In
+                    <SignIn/>
                   </Button>
                 </Link>
               </SignedOut>
@@ -81,7 +81,7 @@ const Header = () => {
                     <SignedOut>
                       <Link href="/sign-in">
                         <Button className="ring-1 ring-white rounded-2xl py-2 px-6 text-lg font-bold">
-                          Sign In
+                          <SignIn/>
                         </Button>
                       </Link>
                     </SignedOut>
