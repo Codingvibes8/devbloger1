@@ -1,9 +1,9 @@
 import './globals.css';
-import Header from './components/Header';
+import Header from '@/components/Header';
 import { ThemeProvider } from 'next-themes';
-import ThemeCom from './components/ThemeCom';
+
 import { ClerkProvider } from '@clerk/nextjs';
-import Footer from './components/Footer';
+import Footer from '@/components/Footer';
 import { Roboto } from 'next/font/google';
 
 // Configure the Roboto font
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         <head>
           {/* Add meta tags, links, or scripts here if needed */}
           <meta charSet='UTF-8' />
+          <title>Developers Blog</title>
           <meta name='viewport' content='width=device-width, initial-scale=1.0' />
           <link rel='icon' href='/favicon.ico' />
         </head>
@@ -33,13 +34,13 @@ export default function RootLayout({ children }) {
           className={`${roboto.className} flex flex-1 flex-col min-h-screen overflow-x-hidden`}
         >
           <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-            <ThemeCom>
-              <main className='flex flex-1 flex-col min-h-screen max-w-[1536px] mx-auto'>
+
+              <main className='flex flex-1 flex-col min-h-screen w-full mx-auto px-8 md:px-16 lg:px-24'>
                 <Header />
                 {children}
                 <Footer />
               </main>
-            </ThemeCom>
+
           </ThemeProvider>
         </body>
       </html>
