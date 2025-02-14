@@ -8,9 +8,9 @@ import { FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from 'next-themes'
 import { dark, light } from '@clerk/themes'
 import { SignIn, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import { Button } from '@/components/ui/button'
-import { Switch } from '@/components/ui/switch'
-import { Input } from '@/components/ui/input'
+import { Button } from '@/app/components/ui/button'
+import { Switch } from '@/app/components/ui/switch'
+import { Input } from '@/app/components/ui/input'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
